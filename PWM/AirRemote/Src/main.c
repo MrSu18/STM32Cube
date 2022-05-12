@@ -25,7 +25,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "AirCodeAndSend.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -90,7 +90,8 @@ int main(void)
   MX_USART1_UART_Init();
   MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
-
+  HAL_TIM_PWM_Start(&htim3,TIM_CHANNEL_2);//初始化PWM通道
+  Air_Contorl(0XBF,0XD0);//制冷26度开自动风，测试用，复位作为按键，程序启动一次就开一次空调
   /* USER CODE END 2 */
 
   /* Infinite loop */

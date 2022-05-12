@@ -1,7 +1,7 @@
 Dependencies for Project 'AirRemote', Target 'AirRemote': (DO NOT MODIFY !)
 CompilerVersion: 5060750::V5.06 update 6 (build 750)::ARMCC
 F (startup_stm32f103xb.s)(0x627CBF04)(--cpu Cortex-M3 -g --apcs=interwork -I.\RTE\_AirRemote-IE:\IDE\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\IDE\keil\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include--pd "__UVISION_VERSION SETA 530" --pd "_RTE_ SETA 1" --pd "STM32F10X_MD SETA 1" --pd "_RTE_ SETA 1"--list startup_stm32f103xb.lst --xref -o airremote\startup_stm32f103xb.o --depend airremote\startup_stm32f103xb.d)
-F (../Src/main.c)(0x627CBF01)(--c99 -c --cpu Cortex-M3 -g -O2 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\HardWare\Remote-I.\RTE\_AirRemote-IE:\IDE\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\IDE\keil\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o airremote\main.o --omf_browse airremote\main.crf --depend airremote\main.d)
+F (../Src/main.c)(0x627CC077)(--c99 -c --cpu Cortex-M3 -g -O2 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\HardWare\Remote-I.\RTE\_AirRemote-IE:\IDE\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\IDE\keil\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o airremote\main.o --omf_browse airremote\main.crf --depend airremote\main.d)
 I (../Inc/main.h)(0x627CBF01)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x60F41FD4)
 I (../Inc/stm32f1xx_hal_conf.h)(0x627CBF01)
@@ -33,6 +33,8 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x60F41FD4)
 I (../Inc/tim.h)(0x627CBF00)
 I (../Inc/usart.h)(0x627CBF01)
 I (../Inc/gpio.h)(0x627CBF00)
+I (..\HardWare\Remote\AirCodeAndSend.h)(0x627CBFB9)
+I (E:\IDE\keil\ARM\ARMCC\include\stdio.h)(0x5E53505C)
 F (../Src/gpio.c)(0x627CBF00)(--c99 -c --cpu Cortex-M3 -g -O2 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\HardWare\Remote-I.\RTE\_AirRemote-IE:\IDE\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\IDE\keil\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o airremote\gpio.o --omf_browse airremote\gpio.crf --depend airremote\gpio.d)
 I (../Inc/gpio.h)(0x627CBF00)
 I (../Inc/main.h)(0x627CBF01)

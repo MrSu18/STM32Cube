@@ -31,3 +31,5 @@ airremote\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
 airremote\main.o: ../Inc/tim.h
 airremote\main.o: ../Inc/usart.h
 airremote\main.o: ../Inc/gpio.h
+airremote\main.o: ..\HardWare\Remote\AirCodeAndSend.h
+airremote\main.o: E:\IDE\keil\ARM\ARMCC\Bin\..\include\stdio.h
