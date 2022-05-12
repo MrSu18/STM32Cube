@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"airremote\startup_stm32f103xb.o"
+"airremote\main.o"
+"airremote\gpio.o"
+"airremote\tim.o"
+"airremote\usart.o"
+"airremote\stm32f1xx_it.o"
+"airremote\stm32f1xx_hal_msp.o"
+"airremote\stm32f1xx_hal_gpio_ex.o"
+"airremote\stm32f1xx_hal_tim.o"
+"airremote\stm32f1xx_hal_tim_ex.o"
+"airremote\stm32f1xx_hal.o"
+"airremote\stm32f1xx_hal_rcc.o"
+"airremote\stm32f1xx_hal_rcc_ex.o"
+"airremote\stm32f1xx_hal_gpio.o"
+"airremote\stm32f1xx_hal_dma.o"
+"airremote\stm32f1xx_hal_cortex.o"
+"airremote\stm32f1xx_hal_pwr.o"
+"airremote\stm32f1xx_hal_flash.o"
+"airremote\stm32f1xx_hal_flash_ex.o"
+"airremote\stm32f1xx_hal_exti.o"
+"airremote\stm32f1xx_hal_uart.o"
+"airremote\system_stm32f1xx.o"
+"airremote\aircodeandsend.o"
+--strict --scatter "AirRemote\AirRemote.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "AirRemote.map" -o AirRemote\AirRemote.axf
