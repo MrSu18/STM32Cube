@@ -1,7 +1,7 @@
 Dependencies for Project 'Usart', Target 'Usart': (DO NOT MODIFY !)
 CompilerVersion: 5060750::V5.06 update 6 (build 750)::ARMCC
 F (startup_stm32f103xb.s)(0x627CFD7A)(--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_Usart-IE:\IDE\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\IDE\keil\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include--pd "__UVISION_VERSION SETA 530" --pd "_RTE_ SETA 1" --pd "STM32F10X_MD SETA 1" --pd "_RTE_ SETA 1"--list startup_stm32f103xb.lst --xref -o usart\startup_stm32f103xb.o --depend usart\startup_stm32f103xb.d)
-F (../Core/Src/main.c)(0x627D1D3B)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\SYSTEM\Delay -I ..\SYSTEM\myusart -I ..\SYSTEM\sys-I.\RTE\_Usart-IE:\IDE\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\IDE\keil\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o usart\main.o --omf_browse usart\main.crf --depend usart\main.d)
+F (../Core/Src/main.c)(0x63281E82)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\SYSTEM\Delay -I ..\SYSTEM\myusart -I ..\SYSTEM\sys-I.\RTE\_Usart-IE:\IDE\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\IDE\keil\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o usart\main.o --omf_browse usart\main.crf --depend usart\main.d)
 I (../Core/Inc/main.h)(0x627CFD77)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x60F41FD4)
 I (../Core/Inc/stm32f1xx_hal_conf.h)(0x627CFD77)
@@ -30,7 +30,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x60F41FD4)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x60F41FD4)
 I (../Core/Inc/usart.h)(0x627CFD76)
 I (../Core/Inc/gpio.h)(0x627CFD76)
-I (..\SYSTEM\myusart\myusart.h)(0x627D1D3B)
+I (..\SYSTEM\myusart\myusart.h)(0x63280E02)
 I (E:\IDE\keil\ARM\ARMCC\include\stdio.h)(0x5E53505C)
 F (../Core/Src/gpio.c)(0x627CFD76)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\SYSTEM\Delay -I ..\SYSTEM\myusart -I ..\SYSTEM\sys-I.\RTE\_Usart-IE:\IDE\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\IDE\keil\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o usart\gpio.o --omf_browse usart\gpio.crf --depend usart\gpio.d)
 I (../Core/Inc/gpio.h)(0x627CFD76)
@@ -561,8 +561,8 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x60F41FD4)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x60F41FD4)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x60F41FD4)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x60F41FD4)
-F (..\SYSTEM\myusart\myusart.c)(0x627D1DCA)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\SYSTEM\Delay -I ..\SYSTEM\myusart -I ..\SYSTEM\sys-I.\RTE\_Usart-IE:\IDE\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\IDE\keil\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o usart\myusart.o --omf_browse usart\myusart.crf --depend usart\myusart.d)
-I (..\SYSTEM\myusart\myusart.h)(0x627D1D3B)
+F (..\SYSTEM\myusart\myusart.c)(0x63280DE0)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\SYSTEM\Delay -I ..\SYSTEM\myusart -I ..\SYSTEM\sys-I.\RTE\_Usart-IE:\IDE\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\IDE\keil\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o usart\myusart.o --omf_browse usart\myusart.crf --depend usart\myusart.d)
+I (..\SYSTEM\myusart\myusart.h)(0x63280E02)
 I (../Core/Inc/usart.h)(0x627CFD76)
 I (../Core/Inc/main.h)(0x627CFD77)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x60F41FD4)

@@ -99,8 +99,8 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	HAL_GPIO_WritePin(LED_GPIO_Port,LED_Pin,GPIO_PIN_SET);
-	  printf("hello\r\n");
+	  HAL_GPIO_WritePin(LED_GPIO_Port,LED_Pin,GPIO_PIN_SET);
+	  printf("%s\r\n",usart_rx_queue.USART_RX_BUF);
 	  HAL_Delay(900);
   }
   /* USER CODE END 3 */
