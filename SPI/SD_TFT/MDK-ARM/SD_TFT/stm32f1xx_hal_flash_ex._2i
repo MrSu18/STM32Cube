@@ -1,0 +1,6 @@
+--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\SYSTEM\Delay -I ..\SYSTEM\myusart -I ..\SYSTEM\sys -I ..\HARDWARE\SD_TFT -I ../FATFS/Target -I ../FATFS/App -I ../Middlewares/Third_Party/FatFs/src
+-I.\RTE\_SD_TFT
+-IE:\IDE\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+-IE:\IDE\keil\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include
+-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB
+-o sd_tft\stm32f1xx_hal_flash_ex.o --omf_browse sd_tft\stm32f1xx_hal_flash_ex.crf --depend sd_tft\stm32f1xx_hal_flash_ex.d --feedback "SD_TFT\SD_TFT.fed" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c"

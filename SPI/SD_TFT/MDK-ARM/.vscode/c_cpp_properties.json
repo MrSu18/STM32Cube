@@ -12,11 +12,15 @@
                 "e:\\nodeanddata\\MCU_project\\MDK\\SPI\\SD_TFT\\SYSTEM\\myusart",
                 "e:\\nodeanddata\\MCU_project\\MDK\\SPI\\SD_TFT\\SYSTEM\\sys",
                 "e:\\nodeanddata\\MCU_project\\MDK\\SPI\\SD_TFT\\HARDWARE\\SD_TFT",
+                "e:\\nodeanddata\\MCU_project\\MDK\\SPI\\SD_TFT\\FATFS\\Target",
+                "e:\\nodeanddata\\MCU_project\\MDK\\SPI\\SD_TFT\\FATFS\\App",
+                "e:\\nodeanddata\\MCU_project\\MDK\\SPI\\SD_TFT\\Middlewares\\Third_Party\\FatFs\\src",
                 "E:\\IDE\\keil\\ARM\\ARMCC\\include",
                 "E:\\IDE\\keil\\ARM\\ARMCC\\include\\rw",
                 "e:\\nodeanddata\\MCU_project\\MDK\\SPI\\SD_TFT\\MDK-ARM",
                 "e:\\nodeanddata\\MCU_project\\MDK\\SPI\\SD_TFT\\Core\\Src",
-                "e:\\nodeanddata\\MCU_project\\MDK\\SPI\\SD_TFT\\Drivers\\STM32F1xx_HAL_Driver\\Src"
+                "e:\\nodeanddata\\MCU_project\\MDK\\SPI\\SD_TFT\\Drivers\\STM32F1xx_HAL_Driver\\Src",
+                "e:\\nodeanddata\\MCU_project\\MDK\\SPI\\SD_TFT\\Middlewares\\Third_Party\\FatFs\\src\\option"
             ],
             "defines": [
                 "USE_HAL_DRIVER",

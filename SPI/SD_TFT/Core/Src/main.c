@@ -19,13 +19,16 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "fatfs.h"
 #include "spi.h"
 #include "usart.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "delay.h"
+#include "myusart.h"
+#include "SD_TFT.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -82,23 +85,38 @@ int main(void)
   SystemClock_Config();
 
   /* USER CODE BEGIN SysInit */
-
+	
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_SPI1_Init();
   MX_USART1_UART_Init();
+  MX_FATFS_Init();
   /* USER CODE BEGIN 2 */
-
+	delay_init(72);
+	printf("SD Card SPI test\r\n");
+	while(SD_Spi_Init());
+//	uint8_t buf[600]={0};
+//	for(int i=0;i<600;i++)
+//	{
+//	   buf[i]=i%255;
+//	}
+//	SD_WriteDisk(buf,0,1);
+//	printf("sd card write ok!\r\n");
+	uint8_t rbuf[512]={0};
   /* USER CODE END 2 */
-
+	while(SD_ReadDisk(rbuf,0,2));
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
     /* USER CODE END WHILE */
-
+	  for(int i=0;i<512;i++)
+	  {
+		printf("%d\r\n",rbuf[i]);
+		delay_ms(500);
+	  }
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */

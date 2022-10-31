@@ -1,14 +1,4 @@
-/*
- * SDSPI.h
- *
- *  Created on: 2022年3月12日
- *      Author: Interstellar
- */
-
-#ifndef CODE_SDSPI_H_
-#define CODE_SDSPI_H_
-
-#include "stdint.h" //uint8_t
+#include "stdint.h"
 
 // SD卡类型定义
 #define SD_TYPE_ERR     0X00
@@ -49,28 +39,11 @@
 #define MSD_PARAMETER_ERROR        0x40
 #define MSD_RESPONSE_FAILURE       0xFF
 
-//引脚
-#define SD_SPI      SPI_1
-#define SD_SPI_SCLK SPI1_SCLK_P10_2
-#define SD_SPI_MOSI SPI1_MOSI_P10_1
-#define SD_SPI_MISO SPI1_MISO_P11_3
-#define SD_SPI_CS   SPI1_CS4_P11_11
-
 
 uint8_t SD_Spi_Init(void);
 uint8_t SD_GetCID(uint8_t *cid_data);
-
 uint8_t SD_GetCSD(uint8_t *csd_data);
 uint32_t SD_GetSectorCount(void);
 uint8_t SD_ReadDisk(uint8_t*buf,uint32_t sector,uint8_t cnt);
 uint8_t SD_WriteDisk(uint8_t*buf,uint32_t sector,uint8_t cnt);
-
-//SD卡全局变量声明————读取或者写入的buf
-extern uint8_t SD_Send_Buffer[512];
-extern uint8_t SD_Receive_Buffer[512];
-
-
-
-
-
-#endif /* CODE_SDSPI_H_ */
+void SPI_SetSpeed(uint8_t mode);//设置速度，0-低速，1-高速

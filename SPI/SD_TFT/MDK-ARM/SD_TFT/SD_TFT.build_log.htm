@@ -17,106 +17,21 @@ Library Manager: ArmAr.exe V5.06 update 6 (build 750)
 Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
 CPU DLL:         SARMCM3.DLL V5.30.0.0
 Dialog DLL:      DCM.DLL V1.17.3.0
-Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.7.0
+Target DLL:      CMSIS_AGDI.dll V1.32.5.0
 Dialog DLL:      TCM.DLL V1.42.0.0
  
 <h2>Project:</h2>
 E:\nodeanddata\MCU_project\MDK\SPI\SD_TFT\MDK-ARM\SD_TFT.uvprojx
-Project File Date:  10/27/2022
+Project File Date:  10/29/2022
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 6 (build 750)', folder: 'E:\IDE\keil\ARM\ARMCC\Bin'
 Build target 'SD_TFT'
-compiling stm32f1xx_hal_gpio_ex.c...
-compiling stm32f1xx_it.c...
-compiling stm32f1xx_hal_pwr.c...
-compiling stm32f1xx_hal_msp.c...
 compiling main.c...
-compiling gpio.c...
-compiling usart.c...
-compiling spi.c...
-compiling stm32f1xx_hal.c...
-compiling stm32f1xx_hal_cortex.c...
-compiling stm32f1xx_hal_flash.c...
-compiling stm32f1xx_hal_spi.c...
-compiling stm32f1xx_hal_gpio.c...
-compiling stm32f1xx_hal_rcc_ex.c...
-compiling SDSPI.c...
-..\HARDWARE\SD_TFT\SDSPI.h(59): error:  #20: identifier "uint8" is undefined
-  uint8 SD_Spi_Init(void);
-..\HARDWARE\SD_TFT\SDSPI.h(60): error:  #20: identifier "uint8" is undefined
-  uint8 SD_GetCID(uint8 *cid_data);
-..\HARDWARE\SD_TFT\SDSPI.h(60): error:  #20: identifier "uint8" is undefined
-  uint8 SD_GetCID(uint8 *cid_data);
-..\HARDWARE\SD_TFT\SDSPI.h(62): error:  #20: identifier "uint8" is undefined
-  uint8 SD_GetCSD(uint8 *csd_data);
-..\HARDWARE\SD_TFT\SDSPI.h(62): error:  #20: identifier "uint8" is undefined
-  uint8 SD_GetCSD(uint8 *csd_data);
-..\HARDWARE\SD_TFT\SDSPI.h(63): error:  #20: identifier "uint32" is undefined
-  uint32 SD_GetSectorCount(void);
-..\HARDWARE\SD_TFT\SDSPI.h(64): error:  #20: identifier "uint8" is undefined
-  uint8 SD_ReadDisk(uint8*buf,uint32 sector,uint8 cnt);
-..\HARDWARE\SD_TFT\SDSPI.h(64): error:  #20: identifier "uint8" is undefined
-  uint8 SD_ReadDisk(uint8*buf,uint32 sector,uint8 cnt);
-..\HARDWARE\SD_TFT\SDSPI.h(64): error:  #20: identifier "uint32" is undefined
-  uint8 SD_ReadDisk(uint8*buf,uint32 sector,uint8 cnt);
-..\HARDWARE\SD_TFT\SDSPI.h(64): error:  #20: identifier "uint8" is undefined
-  uint8 SD_ReadDisk(uint8*buf,uint32 sector,uint8 cnt);
-..\HARDWARE\SD_TFT\SDSPI.h(65): error:  #20: identifier "uint8" is undefined
-  uint8 SD_WriteDisk(uint8*buf,uint32 sector,uint8 cnt);
-..\HARDWARE\SD_TFT\SDSPI.h(65): error:  #20: identifier "uint8" is undefined
-  uint8 SD_WriteDisk(uint8*buf,uint32 sector,uint8 cnt);
-..\HARDWARE\SD_TFT\SDSPI.h(65): error:  #20: identifier "uint32" is undefined
-  uint8 SD_WriteDisk(uint8*buf,uint32 sector,uint8 cnt);
-..\HARDWARE\SD_TFT\SDSPI.h(65): error:  #20: identifier "uint8" is undefined
-  uint8 SD_WriteDisk(uint8*buf,uint32 sector,uint8 cnt);
-..\HARDWARE\SD_TFT\SDSPI.h(68): error:  #20: identifier "uint8" is undefined
-  extern uint8 SD_Send_Buffer[512];
-..\HARDWARE\SD_TFT\SDSPI.h(69): error:  #20: identifier "uint8" is undefined
-  extern uint8 SD_Receive_Buffer[512];
-..\HARDWARE\SD_TFT\SDSPI.c(12): error:  #20: identifier "uint8" is undefined
-  uint8 SD_Type=0;//SDø®µƒ¿‡–Õ
-..\HARDWARE\SD_TFT\SDSPI.c(14): error:  #20: identifier "uint8" is undefined
-  uint8 SD_Send_Buffer[512]={0};
-..\HARDWARE\SD_TFT\SDSPI.c(15): error:  #20: identifier "uint8" is undefined
-  uint8 SD_Receive_Buffer[512]={0};
-..\HARDWARE\SD_TFT\SDSPI.c(21): error:  #20: identifier "uint8" is undefined
-  uint8 SPI_ReadWriteByte(uint8 TxData)
-..\HARDWARE\SD_TFT\SDSPI.c(21): error:  #20: identifier "uint8" is undefined
-  uint8 SPI_ReadWriteByte(uint8 TxData)
-..\HARDWARE\SD_TFT\SDSPI.c(23): error:  #20: identifier "uint8" is undefined
-      uint8 receive_buffer;
-..\HARDWARE\SD_TFT\SDSPI.c(24): warning:  #223-D: function "spi_mosi" declared implicitly
-      spi_mosi (SD_SPI,SD_SPI_CS,&TxData,&receive_buffer,1,1);
-..\HARDWARE\SD_TFT\SDSPI.c(24): error:  #20: identifier "SPI_1" is undefined
-      spi_mosi (SD_SPI,SD_SPI_CS,&TxData,&receive_buffer,1,1);
-..\HARDWARE\SD_TFT\SDSPI.c(24): error:  #20: identifier "SPI1_CS4_P11_11" is undefined
-      spi_mosi (SD_SPI,SD_SPI_CS,&TxData,&receive_buffer,1,1);
-..\HARDWARE\SD_TFT\SDSPI.c(30): error:  #20: identifier "uint8" is undefined
-  uint8 SD_SPI_ReadWriteByte(uint8 data)
-..\HARDWARE\SD_TFT\SDSPI.c(30): error:  #20: identifier "uint8" is undefined
-  uint8 SD_SPI_ReadWriteByte(uint8 data)
-..\HARDWARE\SD_TFT\SDSPI.c(36): error:  #20: identifier "uint8" is undefined
-  uint8 SD_WaitReady(void)
-..\HARDWARE\SD_TFT\SDSPI.c(38): error:  #20: identifier "uint32" is undefined
-      uint32 t=0;
-..\HARDWARE\SD_TFT\SDSPI.c(47): error:  #20: identifier "uint8" is undefined
-  uint8 SD_Select(void)
-..\HARDWARE\SD_TFT\SDSPI.c(57): error:  #20: identifier "uint8" is undefined
-  uint8 SD_GetResponse(uint8 Response)
-..\HARDWARE\SD_TFT\SDSPI.c: 1 warning, 30 errors
-compiling stm32f1xx_hal_rcc.c...
-compiling stm32f1xx_hal_dma.c...
-compiling stm32f1xx_hal_exti.c...
-compiling stm32f1xx_hal_tim.c...
-compiling stm32f1xx_hal_tim_ex.c...
-compiling myusart.c...
-compiling system_stm32f1xx.c...
-compiling delay.c...
-compiling sys.c...
-compiling stm32f1xx_hal_flash_ex.c...
-compiling stm32f1xx_hal_uart.c...
-"SD_TFT\SD_TFT.axf" - 30 Error(s), 1 Warning(s).
+linking...
+Program Size: Code=5944 RO-data=292 RW-data=56 ZI-data=1192  
+FromELF: creating hex file...
+"SD_TFT\SD_TFT.axf" - 0 Error(s), 0 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -140,8 +55,7 @@ Package Vendor: Keil
 
    * Component: ARM::CMSIS:CORE:5.4.0
       Include file:  CMSIS\Core\Include\tz_context.h
-Target not created.
-Build Time Elapsed:  00:00:08
+Build Time Elapsed:  00:00:01
 </pre>
 </body>
 </html>

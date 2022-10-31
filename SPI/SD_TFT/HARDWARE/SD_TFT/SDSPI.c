@@ -10,10 +10,10 @@
 
 //定义使用SPI
 
-uint8_t SD_Type=0;//SD卡的类型
+uint8_t sd_type=0;//SD卡的类型
 
-uint8_t SD_Send_Buffer[512]={0};
-uint8_t SD_Receive_Buffer[512]={0};
+uint8_t sd_send_buffer[512]={0};
+uint8_t sd_receive_buffer[512]={0};
 
 
 //SPIx 读写一个字节
@@ -22,7 +22,7 @@ uint8_t SD_Receive_Buffer[512]={0};
 uint8_t SPI_ReadWriteByte(uint8_t TxData)
 {
     uint8_t receive_buffer;
-    HAL_SPI_TransmitReceive(&hspi1, &TxData, &receive_buffer,sizeof(receive_buffer),1);
+    HAL_SPI_TransmitReceive(&hspi1, &TxData, &receive_buffer,1,1);
     //spi_mosi (SD_SPI,SD_SPI_CS,&TxData,&receive_buffer,1,1);
     return receive_buffer;
 }
@@ -146,7 +146,7 @@ uint8_t SD_Spi_Init(void)
     {
       r1=SD_SendCmd(CMD0,0,0x95);//进入IDLE模式
     }while((r1!=0X01) && retry--);
-    SD_Type=0;//默认无卡
+    sd_type=0;//默认无卡
     if(r1==0X01)
     {
         if(SD_SendCmd(CMD8,0x1AA,0x87)==1)//SD V2.0
@@ -163,8 +163,8 @@ uint8_t SD_Spi_Init(void)
                 if(retry&&SD_SendCmd(CMD58,0,0X01)==0)//鉴别SD2.0卡版本开始
                 {
                     for(i=0;i<4;i++)buf[i]=SD_SPI_ReadWriteByte(0XFF);//得到OCR值
-                    if(buf[0]&0x40)SD_Type=SD_TYPE_V2HC;    //检查CCS
-                    else SD_Type=SD_TYPE_V2;
+                    if(buf[0]&0x40)sd_type=SD_TYPE_V2HC;    //检查CCS
+                    else sd_type=SD_TYPE_V2;
                 }
             }
         }else//SD V1.x/ MMC V3
@@ -173,7 +173,7 @@ uint8_t SD_Spi_Init(void)
             r1=SD_SendCmd(CMD41,0,0X01);    //发送CMD41
             if(r1<=1)
             {
-                SD_Type=SD_TYPE_V1;
+                sd_type=SD_TYPE_V1;
                 retry=0XFFFE;
                 do //等待退出IDLE模式
                 {
@@ -182,18 +182,18 @@ uint8_t SD_Spi_Init(void)
                 }while(r1&&retry--);
             }else//MMC卡不支持CMD55+CMD41识别
             {
-                SD_Type=SD_TYPE_MMC;//MMC V3
+                sd_type=SD_TYPE_MMC;//MMC V3
                 retry=0XFFFE;
                 do //等待退出IDLE模式
                 {
                     r1=SD_SendCmd(CMD1,0,0X01);//发送CMD1
                 }while(r1&&retry--);
             }
-            if(retry==0||SD_SendCmd(CMD16,512,0X01)!=0)SD_Type=SD_TYPE_ERR;//错误的卡
+            if(retry==0||SD_SendCmd(CMD16,512,0X01)!=0)sd_type=SD_TYPE_ERR;//错误的卡
         }
     }
     spi_init(SD_SPI,SD_SPI_SCLK,SD_SPI_MOSI,SD_SPI_MISO,SD_SPI_CS,3,20*1000*1000);//高速
-    if(SD_Type)return 0;
+    if(sd_type)return 0;
     else if(r1)return r1;
     return 255;//其他错误
 }
@@ -266,7 +266,7 @@ uint32_t SD_GetSectorCount(void)
 uint8_t SD_ReadDisk(uint8_t*buf,uint32_t sector,uint8_t cnt)
 {
     uint8_t r1;
-    if(SD_Type!=SD_TYPE_V2HC)sector <<= 9;//转换为字节地址
+    if(sd_type!=SD_TYPE_V2HC)sector <<= 9;//转换为字节地址
     if(cnt==1)
     {
         r1=SD_SendCmd(CMD17,sector,0X01);//读命令
@@ -296,7 +296,7 @@ uint8_t SD_ReadDisk(uint8_t*buf,uint32_t sector,uint8_t cnt)
 uint8_t SD_WriteDisk(uint8_t*buf,uint32_t sector,uint8_t cnt)
 {
     uint8_t r1;
-    if(SD_Type!=SD_TYPE_V2HC)sector *= 512;//转换为字节地址
+    if(sd_type!=SD_TYPE_V2HC)sector *= 512;//转换为字节地址
     if(cnt==1)
     {
         r1=SD_SendCmd(CMD24,sector,0X01);//读命令
@@ -306,7 +306,7 @@ uint8_t SD_WriteDisk(uint8_t*buf,uint32_t sector,uint8_t cnt)
         }
     }else
     {
-        if(SD_Type!=SD_TYPE_MMC)
+        if(sd_type!=SD_TYPE_MMC)
         {
             SD_SendCmd(CMD55,0,0X01);
             SD_SendCmd(CMD23,cnt,0X01);//发送指令
