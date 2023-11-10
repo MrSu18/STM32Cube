@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"su_stm32f103rct6_opensource_library\startup_stm32f103xe.o"
+"su_stm32f103rct6_opensource_library\main.o"
+"su_stm32f103rct6_opensource_library\gpio.o"
+"su_stm32f103rct6_opensource_library\tim.o"
+"su_stm32f103rct6_opensource_library\usart.o"
+"su_stm32f103rct6_opensource_library\stm32f1xx_it.o"
+"su_stm32f103rct6_opensource_library\stm32f1xx_hal_msp.o"
+"su_stm32f103rct6_opensource_library\stm32f1xx_hal_gpio_ex.o"
+"su_stm32f103rct6_opensource_library\stm32f1xx_hal_tim.o"
+"su_stm32f103rct6_opensource_library\stm32f1xx_hal_tim_ex.o"
+"su_stm32f103rct6_opensource_library\stm32f1xx_hal.o"
+"su_stm32f103rct6_opensource_library\stm32f1xx_hal_rcc.o"
+"su_stm32f103rct6_opensource_library\stm32f1xx_hal_rcc_ex.o"
+"su_stm32f103rct6_opensource_library\stm32f1xx_hal_gpio.o"
+"su_stm32f103rct6_opensource_library\stm32f1xx_hal_dma.o"
+"su_stm32f103rct6_opensource_library\stm32f1xx_hal_cortex.o"
+"su_stm32f103rct6_opensource_library\stm32f1xx_hal_pwr.o"
+"su_stm32f103rct6_opensource_library\stm32f1xx_hal_flash.o"
+"su_stm32f103rct6_opensource_library\stm32f1xx_hal_flash_ex.o"
+"su_stm32f103rct6_opensource_library\stm32f1xx_hal_exti.o"
+"su_stm32f103rct6_opensource_library\stm32f1xx_hal_uart.o"
+"su_stm32f103rct6_opensource_library\system_stm32f1xx.o"
+--strict --scatter "Su_STM32F103RCT6_Opensource_Library\Su_STM32F103RCT6_Opensource_Library.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Su_STM32F103RCT6_Opensource_Library.map" -o Su_STM32F103RCT6_Opensource_Library\Su_STM32F103RCT6_Opensource_Library.axf

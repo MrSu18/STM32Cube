@@ -1,0 +1,1 @@
+su_stm32f103rct6_opensource_library\startup_stm32f103xe.o: startup_stm32f103xe.s
