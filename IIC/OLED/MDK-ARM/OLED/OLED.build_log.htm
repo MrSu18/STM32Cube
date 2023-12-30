@@ -5,11 +5,11 @@
 <h2>Tool Versions:</h2>
 IDE-Version: μVision V5.30.0.0
 Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
-License Information: su shizhou, 3051605803, LIC=21E4T-RMSLQ-GKBBG-VUX9B-LK2DB-X2BEI
+License Information: sushizhou 3051605203@qq.com, sushizhou, LIC=VGXG8-3QEPV-ARJXW-QTWH3-8BHKA-H5EDV
  
 Tool Versions:
 Toolchain:       MDK-ARM Plus  Version: 5.30.0.0
-Toolchain Path:  E:\IDE\keil\ARM\ARMCC\Bin
+Toolchain Path:  E:\IDE\Keil\ARM\ARMCC\Bin
 C Compiler:      Armcc.exe V5.06 update 6 (build 750)
 Assembler:       Armasm.exe V5.06 update 6 (build 750)
 Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
@@ -21,24 +21,17 @@ Target DLL:      CMSIS_AGDI.dll V1.32.5.0
 Dialog DLL:      TCM.DLL V1.42.0.0
  
 <h2>Project:</h2>
-e:\nodeanddata\MCU_project\MDK\IIC\OLED\MDK-ARM\OLED.uvprojx
-Project File Date:  07/26/2022
+E:\nodeanddata\MCU_project\STM32F103RCT6\IIC\OLED\MDK-ARM\OLED.uvprojx
+Project File Date:  12/03/2023
 
 <h2>Output:</h2>
-*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'E:\IDE\keil\ARM\ARMCC\Bin'
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'E:\IDE\Keil\ARM\ARMCC\Bin'
 Build target 'OLED'
-compiling oled.c...
-..\HardWare\OLED\oled.c(179): warning:  #167-D: argument of type "int8_t *" is incompatible with parameter of type "char *restrict"
-      if(0>dat)   length = (uint32_t)sprintf(&buff[0],"%f",dat);//负数
-..\HardWare\OLED\oled.c(182): warning:  #167-D: argument of type "int8_t *" is incompatible with parameter of type "char *restrict"
-          length = (uint32_t)sprintf( &buff[1],"%f",dat);
-..\HardWare\OLED\oled.c(200): warning:  #167-D: argument of type "int8_t *" is incompatible with parameter of type "uint8_t *"
-  	OLED_ShowStr(x,y,buff,size);//显示数字
-..\HardWare\OLED\oled.c: 3 warnings, 0 errors
+compiling myiic.c...
 linking...
-Program Size: Code=3454 RO-data=2382 RW-data=20 ZI-data=1636  
+Program Size: Code=3426 RO-data=2382 RW-data=20 ZI-data=1636  
 FromELF: creating hex file...
-"OLED\OLED.axf" - 0 Error(s), 3 Warning(s).
+"OLED\OLED.axf" - 0 Error(s), 0 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -55,8 +48,8 @@ Package Vendor: Keil
 
 <h2>Collection of Component include folders:</h2>
   .\RTE\_OLED
-  E:\IDE\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include
-  E:\IDE\keil\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include
+  E:\IDE\Keil\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  E:\IDE\Keil\Keil\STM32F1xx_DFP\1.1.0\Device\Include
 
 <h2>Collection of Component Files used:</h2>
 

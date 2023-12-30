@@ -475,10 +475,10 @@ ARM Macro Assembler    Page 8
               00000000 
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M3 --apcs=interw
 ork --depend=oled\startup_stm32f103xb.d -ooled\startup_stm32f103xb.o -I.\RTE\_O
-LED -IE:\IDE\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include -IE:\IDE\keil\ARM
-\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include --predefine="__UVISION_VERSION SE
-TA 530" --predefine="_RTE_ SETA 1" --predefine="STM32F10X_MD SETA 1" --predefin
-e="_RTE_ SETA 1" --list=startup_stm32f103xb.lst startup_stm32f103xb.s
+LED -IE:\IDE\Keil\ARM\CMSIS\5.7.0\CMSIS\Core\Include -IE:\IDE\Keil\Keil\STM32F1
+xx_DFP\1.1.0\Device\Include --predefine="__UVISION_VERSION SETA 530" --predefin
+e="_RTE_ SETA 1" --predefine="STM32F10X_MD SETA 1" --predefine="_RTE_ SETA 1" -
+-list=startup_stm32f103xb.lst startup_stm32f103xb.s
 
 
 

@@ -21,7 +21,11 @@
 "su_stm32f103rct6_opensource_library\stm32f1xx_hal_exti.o"
 "su_stm32f103rct6_opensource_library\stm32f1xx_hal_uart.o"
 "su_stm32f103rct6_opensource_library\system_stm32f1xx.o"
---strict --scatter "Su_STM32F103RCT6_Opensource_Library\Su_STM32F103RCT6_Opensource_Library.sct"
+"su_stm32f103rct6_opensource_library\su_common_delay.o"
+"su_stm32f103rct6_opensource_library\su_driver_soft_iic.o"
+"su_stm32f103rct6_opensource_library\su_driver_gpio.o"
+"su_stm32f103rct6_opensource_library\su_device_oled.o"
+--library_type=microlib --strict --scatter "Su_STM32F103RCT6_Opensource_Library\Su_STM32F103RCT6_Opensource_Library.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
 --list "Su_STM32F103RCT6_Opensource_Library.map" -o Su_STM32F103RCT6_Opensource_Library\Su_STM32F103RCT6_Opensource_Library.axf

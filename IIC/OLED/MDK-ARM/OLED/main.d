@@ -7,14 +7,14 @@ oled\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h
 oled\main.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h
 oled\main.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h
 oled\main.o: ../Drivers/CMSIS/Include/core_cm3.h
-oled\main.o: E:\IDE\keil\ARM\ARMCC\Bin\..\include\stdint.h
+oled\main.o: E:\IDE\Keil\ARM\ARMCC\Bin\..\include\stdint.h
 oled\main.o: ../Drivers/CMSIS/Include/cmsis_version.h
 oled\main.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
 oled\main.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
 oled\main.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h
 oled\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 oled\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
-oled\main.o: E:\IDE\keil\ARM\ARMCC\Bin\..\include\stddef.h
+oled\main.o: E:\IDE\Keil\ARM\ARMCC\Bin\..\include\stddef.h
 oled\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h
 oled\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h
 oled\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h

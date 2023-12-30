@@ -1,6 +1,6 @@
 oled\oled.o: ..\HardWare\OLED\oled.c
 oled\oled.o: ..\HardWare\OLED\oled.h
-oled\oled.o: E:\IDE\keil\ARM\ARMCC\Bin\..\include\stdint.h
+oled\oled.o: E:\IDE\Keil\ARM\ARMCC\Bin\..\include\stdint.h
 oled\oled.o: ..\HardWare\IIC\myiic.h
 oled\oled.o: ..\SYSTEM\sys\sys.h
 oled\oled.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h
@@ -16,7 +16,7 @@ oled\oled.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h
 oled\oled.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h
 oled\oled.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h
 oled\oled.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
-oled\oled.o: E:\IDE\keil\ARM\ARMCC\Bin\..\include\stddef.h
+oled\oled.o: E:\IDE\Keil\ARM\ARMCC\Bin\..\include\stddef.h
 oled\oled.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h
 oled\oled.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h
 oled\oled.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h
@@ -31,4 +31,4 @@ oled\oled.o: ../Core/Inc/main.h
 oled\oled.o: ../Core/Inc/gpio.h
 oled\oled.o: ..\SYSTEM\Delay\delay.h
 oled\oled.o: ..\HardWare\OLED\oled_font.h
-oled\oled.o: E:\IDE\keil\ARM\ARMCC\Bin\..\include\stdio.h
+oled\oled.o: E:\IDE\Keil\ARM\ARMCC\Bin\..\include\stdio.h

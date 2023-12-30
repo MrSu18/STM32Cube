@@ -1,0 +1,25 @@
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'E:\IDE\Keil\ARM\ARMCC\Bin'
+Build target 'Su_STM32F103RCT6_Opensource_Library'
+compiling su_device_oled.c...
+..\libraries\sushizhou_device\su_device_oled.c(44): warning:  #223-D: function "IIC_Send_Byte" declared implicitly
+      IIC_Send_Byte(0x78);//OLED地址
+..\libraries\sushizhou_device\su_device_oled.c(56): warning:  #223-D: function "IIC_Send_Byte" declared implicitly
+      IIC_Send_Byte(0x78);//OLED地址
+..\libraries\sushizhou_device\su_device_oled.c(179): warning:  #167-D: argument of type "int8_t *" is incompatible with parameter of type "char *restrict"
+      if(0>dat)   length = (uint32_t)sprintf(&buff[0],"%f",dat);//负数
+..\libraries\sushizhou_device\su_device_oled.c(182): warning:  #167-D: argument of type "int8_t *" is incompatible with parameter of type "char *restrict"
+          length = (uint32_t)sprintf( &buff[1],"%f",dat);
+..\libraries\sushizhou_device\su_device_oled.c(200): warning:  #167-D: argument of type "int8_t *" is incompatible with parameter of type "uint8_t *"
+  	OLED_ShowStr(x,y,buff,size);//显示数字
+..\libraries\sushizhou_device\su_device_oled.c(246): warning:  #223-D: function "IIC_Send_Byte" declared implicitly
+  		IIC_Send_Byte(0x78);			//D/C#=0; R/W#=0
+..\libraries\sushizhou_device\su_device_oled.c(275): warning:  #223-D: function "IIC_Send_Byte" declared implicitly
+  		IIC_Send_Byte(0x78);			//D/C#=0; R/W#=0
+..\libraries\sushizhou_device\su_device_oled.c(325): warning:  #223-D: function "IIC_Send_Byte" declared implicitly
+  		IIC_Send_Byte(0x78);			//D/C#=0; R/W#=0
+..\libraries\sushizhou_device\su_device_oled.c: 8 warnings, 0 errors
+linking...
+Program Size: Code=5442 RO-data=378 RW-data=16 ZI-data=1384  
+FromELF: creating hex file...
+"Su_STM32F103RCT6_Opensource_Library\Su_STM32F103RCT6_Opensource_Library.axf" - 0 Error(s), 8 Warning(s).
+Build Time Elapsed:  00:00:02

@@ -31,3 +31,6 @@ su_stm32f103rct6_opensource_library\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/
 su_stm32f103rct6_opensource_library\main.o: ../Core/Inc/tim.h
 su_stm32f103rct6_opensource_library\main.o: ../Core/Inc/usart.h
 su_stm32f103rct6_opensource_library\main.o: ../Core/Inc/gpio.h
+su_stm32f103rct6_opensource_library\main.o: ../libraries/sushizhou_device/su_device_oled.h
+su_stm32f103rct6_opensource_library\main.o: ../libraries/sushizhou_common/su_common_typedef.h
+su_stm32f103rct6_opensource_library\main.o: ../libraries/sushizhou_common/su_common_delay.h
